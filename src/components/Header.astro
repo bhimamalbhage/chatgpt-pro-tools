@@ -1,0 +1,73 @@
+---
+const navLinks = [
+  { href: '#features', label: 'Features' },
+  { href: '#how-it-works', label: 'How It Works' },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-9 h-9 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/25">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="font-bold text-xl text-gray-900">ChatGPT Pro Tools</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-8">
+        {navLinks.map(link => (
+          <a href={link.href} class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
+            {link.label}
+          </a>
+        ))}
+        <a
+          href="#install"
+          class="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 text-white text-sm font-semibold rounded-full hover:bg-gray-800 transition-all hover:scale-105 active:scale-100 shadow-lg shadow-gray-900/25"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C8.21 0 8.21 0 8.21 0C3.68 0 0 3.68 0 8.21c0 0 0 0 0 3.79C0 16.32 3.68 20 8.21 20h7.58C20.32 20 24 16.32 24 11.79V8.21C24 3.68 20.32 0 15.79 0H12zM7.25 14.43l2.3-3.45-2.3-3.45h1.64l1.53 2.39 1.53-2.39h1.6l-2.28 3.42 2.33 3.48h-1.64l-1.57-2.47-1.57 2.47H7.25zm9.5 0V7.53h1.5v5.52h2.5v1.38h-4z"/>
+          </svg>
+          Add to Chrome
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden p-2 text-gray-600 hover:text-gray-900" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="hidden md:hidden pb-4" id="mobile-menu">
+      <div class="flex flex-col gap-2">
+        {navLinks.map(link => (
+          <a href={link.href} class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">
+            {link.label}
+          </a>
+        ))}
+        <a
+          href="#install"
+          class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gray-900 text-white text-sm font-semibold rounded-full"
+        >
+          Add to Chrome
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>

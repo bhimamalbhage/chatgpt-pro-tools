@@ -1,0 +1,108 @@
+---
+const features = [
+  {
+    icon: 'export',
+    title: 'Export Conversations',
+    description: 'Save your ChatGPT conversations as beautifully formatted PDF or Word documents with one click.',
+    color: 'blue',
+  },
+  {
+    icon: 'prompts',
+    title: 'Save Favorite Prompts',
+    description: 'Build your personal prompt library. Save, organize, and reuse your best prompts instantly.',
+    color: 'purple',
+  },
+  {
+    icon: 'scroll',
+    title: 'Quick Navigation',
+    description: 'Jump to the top or bottom of long conversations instantly with floating scroll controls.',
+    color: 'green',
+  },
+  {
+    icon: 'menu',
+    title: 'Unified Interface',
+    description: 'Access all tools from a single floating button. Clean, minimal, and always within reach.',
+    color: 'orange',
+  },
+  {
+    icon: 'lightweight',
+    title: 'Lightweight & Fast',
+    description: 'Built for performance. No bloat, no slowdowns — just the tools you need.',
+    color: 'pink',
+  },
+  {
+    icon: 'privacy',
+    title: 'Privacy First',
+    description: 'Your data stays on your device. No tracking, no analytics, no servers involved.',
+    color: 'teal',
+  },
+];
+
+const colorClasses = {
+  blue: { bg: 'bg-blue-100', text: 'text-blue-600' },
+  purple: { bg: 'bg-purple-100', text: 'text-purple-600' },
+  green: { bg: 'bg-green-100', text: 'text-green-600' },
+  orange: { bg: 'bg-orange-100', text: 'text-orange-600' },
+  pink: { bg: 'bg-pink-100', text: 'text-pink-600' },
+  teal: { bg: 'bg-teal-100', text: 'text-teal-600' },
+};
+---
+
+<section id="features" class="py-20 lg:py-32 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
+        Features
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        Everything You Need to Level Up
+      </h2>
+      <p class="text-lg text-gray-600">
+        Simple yet powerful tools designed to enhance your ChatGPT workflow without getting in the way.
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {features.map((feature) => (
+        <div class="group bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-lg hover:border-gray-200 transition-all duration-300 hover:-translate-y-1">
+          <div class={`w-14 h-14 ${colorClasses[feature.color as keyof typeof colorClasses].bg} rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}>
+            {feature.icon === 'export' && (
+              <svg class={`w-7 h-7 ${colorClasses[feature.color as keyof typeof colorClasses].text}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            )}
+            {feature.icon === 'prompts' && (
+              <svg class={`w-7 h-7 ${colorClasses[feature.color as keyof typeof colorClasses].text}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+              </svg>
+            )}
+            {feature.icon === 'scroll' && (
+              <svg class={`w-7 h-7 ${colorClasses[feature.color as keyof typeof colorClasses].text}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+              </svg>
+            )}
+            {feature.icon === 'menu' && (
+              <svg class={`w-7 h-7 ${colorClasses[feature.color as keyof typeof colorClasses].text}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+              </svg>
+            )}
+            {feature.icon === 'lightweight' && (
+              <svg class={`w-7 h-7 ${colorClasses[feature.color as keyof typeof colorClasses].text}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            )}
+            {feature.icon === 'privacy' && (
+              <svg class={`w-7 h-7 ${colorClasses[feature.color as keyof typeof colorClasses].text}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            )}
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+          <p class="text-gray-600 leading-relaxed">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
