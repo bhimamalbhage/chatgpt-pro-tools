@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const lastUpdated = 'January 29, 2026';
+---
+
+<Layout title="Terms of Service - ChatGPT Pro Tools">
+  <Header />
+  <main class="pt-32 pb-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Terms of Service</h1>
+      <p class="text-gray-500 mb-12">Last updated: {lastUpdated}</p>
+
+      <div class="prose prose-gray max-w-none">
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Agreement to Terms</h2>
+          <p class="text-gray-600 leading-relaxed">
+            By installing or using ChatGPT Pro Tools ("the Extension"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Extension.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Description of Service</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            ChatGPT Pro Tools is a free Chrome browser extension that enhances the ChatGPT experience by providing:
+          </p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+            <li>Conversation export to PDF and Word formats</li>
+            <li>Prompt saving and quick insertion</li>
+            <li>Navigation controls for long conversations</li>
+          </ul>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Use License</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            The Extension is provided free of charge. You are granted a limited, non-exclusive, non-transferable license to use the Extension for personal or commercial purposes, subject to these terms.
+          </p>
+          <p class="text-gray-600 leading-relaxed">You may NOT:</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4 mt-2">
+            <li>Redistribute the Extension as your own</li>
+            <li>Modify and sell the Extension</li>
+            <li>Use the Extension for any unlawful purpose</li>
+          </ul>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Third-Party Services</h2>
+          <p class="text-gray-600 leading-relaxed">
+            The Extension is designed to work with ChatGPT (chatgpt.com), which is a service provided by OpenAI. Your use of ChatGPT is subject to OpenAI's terms of service and privacy policy. We are not affiliated with OpenAI, and we are not responsible for ChatGPT's availability, functionality, or any changes they make to their service.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Disclaimer of Warranties</h2>
+          <p class="text-gray-600 leading-relaxed">
+            The Extension is provided "AS IS" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Extension will be uninterrupted, error-free, or free of harmful components.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Limitation of Liability</h2>
+          <p class="text-gray-600 leading-relaxed">
+            In no event shall the developers of ChatGPT Pro Tools be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use or inability to use the Extension.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Changes to the Extension</h2>
+          <p class="text-gray-600 leading-relaxed">
+            We reserve the right to modify, suspend, or discontinue the Extension at any time without notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuance of the Extension.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Changes to Terms</h2>
+          <p class="text-gray-600 leading-relaxed">
+            We reserve the right to update these Terms of Service at any time. Changes will be effective immediately upon posting to this page. Your continued use of the Extension after any changes indicates your acceptance of the new terms.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Contact</h2>
+          <p class="text-gray-600 leading-relaxed">
+            For any questions regarding these Terms of Service, please contact us at <a href="mailto:itsbhima.ai@gmail.com" class="text-primary-600 hover:text-primary-700 underline">itsbhima.ai@gmail.com</a>.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

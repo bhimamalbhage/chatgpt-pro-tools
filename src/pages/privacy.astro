@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const lastUpdated = 'January 29, 2026';
+---
+
+<Layout title="Privacy Policy - ChatGPT Pro Tools">
+  <Header />
+  <main class="pt-32 pb-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
+      <p class="text-gray-500 mb-12">Last updated: {lastUpdated}</p>
+
+      <div class="prose prose-gray max-w-none">
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Overview</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            ChatGPT Pro Tools ("the Extension") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our Chrome extension.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            <strong class="text-gray-900">The short version:</strong> We don't collect, store, or transmit any of your personal data. Everything stays on your device.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Information We Do NOT Collect</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">We want to be clear about what we don't do:</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+            <li>We do NOT collect personal information</li>
+            <li>We do NOT track your browsing activity</li>
+            <li>We do NOT read or store your ChatGPT conversations</li>
+            <li>We do NOT use analytics or tracking tools</li>
+            <li>We do NOT sell or share any data with third parties</li>
+            <li>We do NOT have servers that receive your data</li>
+          </ul>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Data Stored Locally</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            The Extension stores the following data locally on your device using Chrome's built-in storage API (<code class="bg-gray-100 px-2 py-1 rounded text-sm">chrome.storage.local</code>):
+          </p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+            <li><strong class="text-gray-900">Saved Prompts:</strong> Any prompts you choose to save for quick access</li>
+          </ul>
+          <p class="text-gray-600 leading-relaxed mt-4">
+            This data never leaves your device and is not accessible to us or any third party. You can clear this data at any time by removing the extension or clearing extension data in Chrome settings.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Export Feature</h2>
+          <p class="text-gray-600 leading-relaxed">
+            When you export a conversation to PDF or Word format, the export is generated entirely within your browser. The conversation content is processed locally and saved directly to your device. No data is sent to any external server during this process.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Permissions</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">The Extension requires the following permissions:</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+            <li><strong class="text-gray-900">Host permission for chatgpt.com:</strong> Required to add the floating toolbar to the ChatGPT interface</li>
+            <li><strong class="text-gray-900">Storage:</strong> Required to save your prompts locally on your device</li>
+          </ul>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Third-Party Services</h2>
+          <p class="text-gray-600 leading-relaxed">
+            The Extension does not integrate with or send data to any third-party services, APIs, or analytics platforms.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Children's Privacy</h2>
+          <p class="text-gray-600 leading-relaxed">
+            The Extension does not knowingly collect any information from children under 13 years of age. Since we don't collect any personal information from any users, this naturally extends to children as well.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Changes to This Policy</h2>
+          <p class="text-gray-600 leading-relaxed">
+            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this Privacy Policy periodically.
+          </p>
+        </section>
+
+        <section class="mb-10">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Contact Us</h2>
+          <p class="text-gray-600 leading-relaxed">
+            If you have any questions about this Privacy Policy, please contact us at <a href="mailto:itsbhima.ai@gmail.com" class="text-primary-600 hover:text-primary-700 underline">itsbhima.ai@gmail.com</a>.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
