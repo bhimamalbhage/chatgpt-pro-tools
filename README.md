@@ -1,6 +1,6 @@
 # ChatGPT Pro Tools
 
-A premium Chrome extension that enhances your ChatGPT experience with powerful productivity features and beautiful themes.
+A premium Chrome extension that enhances your AI chat experience (ChatGPT, Claude, Gemini) with powerful productivity features and beautiful themes.
 
 ## ✨ Features
 
@@ -10,7 +10,7 @@ A premium Chrome extension that enhances your ChatGPT experience with powerful p
 - **⬆️⬇️ Smart Scroll Controls**: Quick scroll to top/bottom buttons for long conversations
 - **🎯 Enhanced UI**: Glassmorphism design with smooth animations and micro-interactions
 - **💾 Theme Persistence**: Your theme choice is saved and applied across sessions
-- **⚡ Lightweight**: Minimal performance impact on ChatGPT
+- **⚡ Lightweight**: Minimal performance impact on supported platforms
 
 ## 🚀 Project Structure
 
